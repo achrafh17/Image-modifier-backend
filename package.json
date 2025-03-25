@@ -6,5 +6,6 @@
   },
   "scripts": {
     "start": "node index.js"
+    ,"postinstall": "npx sharp-cli install"
   }
 }
