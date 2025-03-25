@@ -1,6 +1,6 @@
 const express = require("express");
 const app = express();
-const port = process.env.PORT || 8080;
+const PORT = process.env.PORT || 8080;
 const cors = require("cors");
 const sharp = require("sharp");
 app.use(cors());
@@ -75,6 +75,6 @@ app.post("/app", async (req, res) => {
 });
 
 //------------------------------------------------------------
-app.listen(port, () => {
-  console.log(`server is running on port ${port}`);
+app.listen(PORT, () => {
+  console.log(`server is running on port ${PORT}`);
 });
